@@ -1,5 +1,5 @@
 import { HttpClient } from "@angular/common/http";
-import { inject, Injectable } from "@angular/core";
+import { inject, Injectable, signal } from "@angular/core";
 
 
 @Injectable({ providedIn : 'root'})
@@ -7,6 +7,7 @@ export class characterService {
 
   private http = inject(HttpClient);
   url = 'https://rickandmortyapi.com/api';
+  character = signal<any[]>([]);
 
   constructor(){
     // this.loadCharacter();
@@ -14,8 +15,10 @@ export class characterService {
 
   loadCharacter ():void{
     this.http.get(`${ this.url }/character`).subscribe(
-      (resp) => {
-        console.log(resp);
+      (resp:any) => {
+        console.log(resp.results);
+        this.character.set(resp.results);
+
       }
     )
 
