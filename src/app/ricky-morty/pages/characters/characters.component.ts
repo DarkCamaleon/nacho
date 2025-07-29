@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { characterService } from '../../../services/rickmorty.service';
+import { characterService } from '../../services/rickmorty.service';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
