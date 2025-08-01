@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import CharactersComponent from './ricky-morty/pages/characters/characters.component';
+import { CatalogoComponent } from './ricky-morty/pages/catalogo/catalogo.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CharactersComponent ],
+  imports: [RouterOutlet, CatalogoComponent ],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

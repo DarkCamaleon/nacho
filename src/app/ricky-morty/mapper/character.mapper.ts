@@ -9,7 +9,11 @@ export class CharacterMapper{
       id : personaje.id,
       name : personaje.name,
       image : personaje.image,
-      created : personaje.created
+      created : personaje.created,
+      location : {
+        name : personaje.location.name
+
+      }
 
     }
   }

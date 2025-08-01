@@ -5,6 +5,6 @@ export const routes: Routes = [
   {
     path : 'personajes',
     loadComponent: () =>
-          import('./ricky-morty/pages/characters/characters.component'),
+          import('./ricky-morty/pages/catalogo/componentes/character-card/character-card.component'),
   }
 ];

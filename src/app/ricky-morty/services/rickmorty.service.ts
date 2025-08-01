@@ -13,15 +13,16 @@ export class characterService {
   character = signal<CharacterApp[]>([]);
 
   constructor(){
-    // this.loadCharacter();
+    this.loadCharacter();
   }
 
   loadCharacter (){
     this.http.get<CharacterResponse>(`${ this.url }/character`).subscribe(
       (resp) => {
-        console.log(resp.results);
+
         const personajes = CharacterMapper.mapCharactersArray(resp.results);
         this.character.set(personajes);
+        console.log("service responde : " , this.character());
 
       }
     )

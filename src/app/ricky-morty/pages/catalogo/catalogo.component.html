@@ -1,0 +1,7 @@
+<div class="flex flex-wrap justify-center items-center">
+  @for (character of personajes.character(); track character.id){
+
+  <character-card [personaje]="character"></character-card>
+}
+
+</div>

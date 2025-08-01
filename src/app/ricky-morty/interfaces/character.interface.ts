@@ -6,5 +6,8 @@ export interface CharacterApp{
   name : string;
   image : string;
   created : Date;
+  location : {
+    name : string;
+  }
 
 }
