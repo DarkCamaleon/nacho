@@ -14,7 +14,21 @@ export default class CharactersComponent {
 
    personaje = input<CharacterApp>();
 
+   ngOnInit(){
+      this.verPersonajes();
+   }
+
+   verPersonajes (){
+
+      const lospersonajes = this.personaje();
+
+      console.log({lospersonajes});
+   }
+
+
 
 
 
 }
+
+

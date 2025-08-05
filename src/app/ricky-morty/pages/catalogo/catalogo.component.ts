@@ -11,10 +11,10 @@ import  NavBarComponent  from '../../componentes/navbar/navbar';
 })
 export class CatalogoComponent {
 
-    personajes = inject(characterService);
+    personajes = inject(characterService).character;
 
     constructor(){
-      console.log(this.personajes);
+      console.log(this.personajes());
     }
 
  }
