@@ -1,9 +1,10 @@
 import {  Component } from '@angular/core';
+import NavBarComponent from '../../componentes/navbar/navbar';
 
 @Component({
   selector: 'app-search',
-  imports: [],
+  imports: [NavBarComponent],
   templateUrl: './search.component.html',
 
 })
-export class SearchComponent { }
+export default class SearchComponent { }

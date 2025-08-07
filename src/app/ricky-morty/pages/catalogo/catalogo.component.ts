@@ -9,7 +9,7 @@ import  NavBarComponent  from '../../componentes/navbar/navbar';
   templateUrl: './catalogo.component.html',
 
 })
-export class CatalogoComponent {
+export default class CatalogoComponent {
 
     personajes = inject(characterService).character;
 

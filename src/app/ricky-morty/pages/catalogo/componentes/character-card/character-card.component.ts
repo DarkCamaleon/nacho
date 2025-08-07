@@ -13,6 +13,7 @@ import { CharacterApp } from '../../../../interfaces/character.interface';
 export default class CharactersComponent {
 
    personaje = input<CharacterApp>();
+   // input espera un valor
 
    ngOnInit(){
       this.verPersonajes();
