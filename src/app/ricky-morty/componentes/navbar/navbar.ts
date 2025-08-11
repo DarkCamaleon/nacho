@@ -1,4 +1,4 @@
-import {  Component } from '@angular/core';
+import {  Component, input } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
@@ -9,9 +9,9 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 })
 export default class NavBarComponent {
 
-  showInput = true;
+  showInput = input<boolean>();
 
-  removerInput( estado : boolean){
-    this.showInput = false;
+  ngOnInit(){
+    console.log(this.showInput());
   }
 }

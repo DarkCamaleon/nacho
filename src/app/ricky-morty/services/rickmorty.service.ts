@@ -11,6 +11,7 @@ export class characterService {
   private http = inject(HttpClient);
   url = 'https://rickandmortyapi.com/api';
   character = signal<CharacterApp[]>([]);
+  showSearchInput = signal<boolean>(false);
 
   constructor(){
     this.loadCharacter();

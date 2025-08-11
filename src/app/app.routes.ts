@@ -13,4 +13,9 @@ export const routes: Routes = [
     loadComponent: () =>
           import('./ricky-morty/pages/search/search.component'),
   },
+   {
+        path : '**',
+        redirectTo: 'catalogo',
+      }
+
 ];
