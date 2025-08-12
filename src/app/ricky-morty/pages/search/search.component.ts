@@ -1,6 +1,6 @@
-import {  Component, inject, output } from '@angular/core';
+import {  Component } from '@angular/core';
 import NavBarComponent from '../../componentes/navbar/navbar';
-import { characterService } from '../../services/rickmorty.service';
+
 
 @Component({
   selector: 'app-search',
@@ -10,5 +10,5 @@ import { characterService } from '../../services/rickmorty.service';
 })
 export default class SearchComponent {
 
-  showInputNavBar  :  boolean = false;
+
 }

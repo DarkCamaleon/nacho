@@ -9,9 +9,6 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 })
 export default class NavBarComponent {
 
-  showInput = input<boolean>();
+  showSearchNavBar = input<boolean>(false);
 
-  ngOnInit(){
-    console.log(this.showInput());
-  }
 }

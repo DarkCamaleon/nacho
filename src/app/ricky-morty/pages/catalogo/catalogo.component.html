@@ -1,5 +1,6 @@
 
-<app-navbar [showInput]="showInputNavBar"></app-navbar>
+<app-navbar [showSearchNavBar]="true"></app-navbar>
+<!-- se le mando un true al atributo showSearchNavBar en donde este atributo deb estar en app-navbar -->
 <div class="flex flex-wrap justify-center items-center">
   @for (character of personajes(); track character.id){
 

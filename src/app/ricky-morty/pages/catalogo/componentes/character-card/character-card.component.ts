@@ -1,10 +1,10 @@
 import { Component, input } from '@angular/core';
 import { CharacterApp } from '../../../../interfaces/character.interface';
-
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'character-card',
-  imports: [],
+  imports: [NgClass],
   templateUrl: './character-card.component.html',
 
 })

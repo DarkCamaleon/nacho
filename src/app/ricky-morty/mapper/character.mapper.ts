@@ -10,6 +10,7 @@ export class CharacterMapper{
       name : personaje.name,
       image : personaje.image,
       created : personaje.created,
+      gender : personaje.gender,
       location : {
         name : personaje.location.name
 
