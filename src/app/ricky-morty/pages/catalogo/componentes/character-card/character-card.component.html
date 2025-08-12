@@ -1,7 +1,7 @@
 
 
     <div class="max-w-sm border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 m-3"
-    [ngClass]="{'bg-blue-300' : personaje()?.gender === 'Male' , 'bg-fuchsia-300' : personaje()?.gender === 'Female' }">
+    [ngClass]=" personaje()?.gender === 'Male'  ? 'bg-blue-300' : 'bg-fuchsia-300'">
         <a href="#">
         <img class="rounded-t-lg" [src]=" personaje()?.image " alt="" />
     </a>
